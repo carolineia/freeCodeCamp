@@ -1,0 +1,44 @@
+h1 {
+  font-family: Georgia;
+  font-size: 42px;
+  text-align: left;
+}
+
+p {
+ font-family: Arial; 
+}
+
+.border-top {
+  border-top: 1px solid silver;
+}
+
+.bold-font {
+  font-weight: bold;
+}
+
+.padding-20 {
+  padding: 20px;
+}
+
+.left-column {
+  padding: 20px 22px 20px 1px;
+}
+
+.img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: auto;
+}
+
+.small-columns {
+  padding: 0px;
+  margin: 0px;
+}
+
+.row-belowpicture {
+  padding:0px;
+  width:100%;
+  margin:0px;
+}
