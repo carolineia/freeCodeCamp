@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Survey Form</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<div class="main-div">
+<h1 id="title">Interplanetary Mission Sign Up</h1>
+<p id="description">Sign up for an experimental space mission</p>
+<form id="survey-form">
+  <label for="name" id="name-label">Name</label>
+    <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+  <br>
+  <br>
+  <label for="email" id="email-label">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+  <br>
+  <br>
+  <label for="number" id="number-label">Age</label>
+    <input type="number" name="number" id="number" min="1" max="150" placeholder="No.">
+  <br>
+  <br>
+  <p>What is your favourite planet?</p>
+  <select name="planets" id="dropdown" class="selectors">
+    <option value="" selected disabled hidden style="color:#75758B;"> Choose a planet</option>
+    <option  value="Mercury">Mercury</option>
+    <option value="Venus">Venus</option>
+    <option value="Earth">Earth</option>
+    <option value="Mars">Mars</option>
+    <option value="Jupiter">Jupiter</option>
+    <option value="Saturn">Saturn</option>
+    <option value="Uranus">Uranus</option>
+    <option value="Neptune">Neptune</option>
+    <option value="Neptune">Other</option>
+  </select>
+  <br>
+  <br>
+  <p>For how long are you prepared to be away from Earth?:</p>
+ 
+    <input type="radio" name="timeaway" value="Less than 6 months"/>Less than 6 months<br>
+    <input type="radio" name="timeaway" value="6 - 12 months"/>6 - 12 months<br>
+    <input type="radio" name="timeaway" value="More than 12 months"/>More than 12 months<br>
+ 
+  <br>
+    <p>What are your thoughts on the Fermi paradox? You may select multiple answers:</p>
+    <input type="checkbox" name="Fermi" value="simluation"/> We are in a simulation<br>
+    <input type="checkbox" name="Fermi" value="here"/> Aliens are already among us, we just don't see them<br>
+    <input type="checkbox" name="Fermi" value="vast"/> Space is really really big<br>
+    <input type="checkbox" name="Fermi" value="rare"/> Life is extremely rare (and we are special)<br>
+    <input type="checkbox" name="Fermi" value="experiment"/> Aliens know we exist and watch us from afar to let us evolve without influence<br>
+  <br>
+  <p>Why do you want to go to another planet?:</p>
+  <textarea type="text" id ="message" name="textareaplaceholder" placeholder="Enter your comments..."></textarea>
+  <br>
+  <input type="submit" name ="submit" value="Submit" id="submit"/>
+</form>
+</div>
