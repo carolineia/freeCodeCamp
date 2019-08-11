@@ -1,0 +1,105 @@
+#nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  padding: 8px;
+  background-color: #420A79;
+  font-size: 20px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif;
+}
+
+#nav-bar div {
+  display: inline;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#header-img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#nav-bar .nav-button:hover {
+  background-color: black;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 60px;
+}
+
+.main-container>div{
+  margin-top: 40px;
+}
+
+form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+form>input, p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+#features>img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 68%;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  z-index: -1;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container>div {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #420A79;
+  color: black;
+}
+
+@media (max-height: 300px) {
+  p {
+    font-size: 10px;
+  }
+}
