@@ -1,44 +1,96 @@
+header {
+  background-color: #5c87c9;
+  padding: 16px;
+}
+
 h1 {
+  margin: 0;
   font-family: Georgia;
+  font-weight: normal;
   font-size: 42px;
   text-align: left;
+  border-bottom: 1px solid silver;
+  margin-bottom: 15px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+main {
+  margin: 0 auto;
+  padding: 30px;
 }
 
 p {
- font-family: Arial; 
+  font-family: Arial;
+  font-size: 16px;
+  margin: 0;
 }
 
-.border-top {
+table {
+  width: 90%;
+  margin: 10px;
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: top;
+  font-family: Arial;
+  font-size: 16px;
+  width: 50%;
+}
+
+tr {
   border-top: 1px solid silver;
 }
 
-.bold-font {
-  font-weight: bold;
-}
-
-.padding-20 {
-  padding: 20px;
-}
-
-.left-column {
-  padding: 20px 22px 20px 1px;
-}
-
-.img {
+img {
   display: block;
+  max-width: 300px;
   width: 80%;
   height: auto;
   margin: auto;
   margin-top: auto;
+  padding: 10px;
 }
 
-.small-columns {
-  padding: 0px;
-  margin: 0px;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.row-belowpicture {
-  padding:0px;
-  width:100%;
-  margin:0px;
+.text-area {
+  margin: 0 20px 20px 0;
+}
+
+.sidebar {
+  background-color: #e2e2e2;
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px){
+  .text-area {
+    flex: 60%;
+    max-width: 60%;
+  }
+  
+  .sidebar {
+    max-width: 40%;
+    flex: 30%;
+  }
+}
+
+@media only screen and (min-width: 640px){
+  main {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1400px){
+  main {
+    width: 60%;
+  }
 }
